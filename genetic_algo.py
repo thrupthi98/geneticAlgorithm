@@ -19,7 +19,7 @@ def newGenes():
 
 # Find out the value of how close the created image is to the actual image
 def valuation(chromosome):
-  sample = Image.new("RGB", (32, 32),"white")
+  sample = Image.new("RGB", (28, 28),"white")
   img = ImageDraw.Draw(sample,'RGBA') 
   for ordinates in chromosome:
     img.rectangle(ordinates, (105,105,105,125))
